@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Upload Notice</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="w3.css">
+        <link rel="icon" href="images/sdbce.ico">    
+    </head>
+    <body>
+          <header class="w3-container w3-teal">
+            <h1 class="w3-animate-bottom" style="text-align:center"><strong>Sushila Devi Bansal College Of Engineering</strong></h1>
+          </header>
+          
+          <div class="w3-container ">
+           <center> 
+               <div class="w3-section" style="width:100%">
+                    <form action="loginindexteacher.jsp" style="display:inline">
+                            <button class="w3-btn w3-teal" style="width:10%">Home</button>
+                    </form>                
+
+                    <form action="trends.html" style="display:inline">   
+                            <button class="w3-btn w3-teal" style="width:10%">Trends</button>
+                     </form>
+
+                   <form action="news.html" style="display:inline" method="post">  
+                            <button class="w3-btn w3-teal" style="width:10%">News</button>
+                    </form>
+                </div>
+            </center>
+          </div>
+        
+<!--        notice form-->
+        <center>
+            <form class="w3-padding w3-card-4" style="width:50%" action="noticeuploadServlet">
+                    <h1 style="color: #006666" class="w3-animate-top"><strong>Upload Notice</strong></h1>
+                  
+          
+              <div class="w3-group">
+                    <select class="w3-select w3-animate-top" style="width:40%" name="branch">
+                      <option value="CS">CS</option>
+                      <option value="IT">IT</option>
+                      <option value="ME">ME</option>
+                      <option value="CE">CE</option>
+                      <option value="EC">EC</option>
+                      <option value="public">public</option>
+                    </select><br>
+                    <label class="w3-label w3-animate-top">Branch</label>
+               </div>
+               <div class="w3-group">
+                    <select class="w3-select w3-animate-top" style="width: 40%" name="sem">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="public">public</option>
+                    </select><br>
+                 <label class="w3-label w3-animate-top">Semester</label>
+                </div>
+          
+          
+                <div class="w3-group">      
+                    <textarea class="w3-input w3-animate-top" style="width:40%" name="noticecontent" required placeholder="Write Notice Content Here"></textarea>
+                  
+                </div>
+                    
+                <div class="w3-group w3-animate-top">      
+                    <input type="date" style="border:1px;border-bottom-style:solid;border-bottom-color:#808080;width:40%;color:#808080;" name="issuedate"><br>
+                    <label class="w3-label">Issue Date</label>
+                </div>
+                 
+                  <div class="w3-group w3-animate-top">      
+                      <input type="date" style="border:1px;border-bottom-style:solid;border-bottom-color:#808080;width:40%;color:#808080;" name="returndate"><br>
+                    <label class="w3-label">Return Date</label>
+                </div>
+          
+                <button class="w3-btn w3-teal ">Upload Notice</button>
+            </form>
+        </center>
+    </body>
+<!--    footer goes here-->
+    <center>
+        <footer>
+            <br><br>
+             <div class="w3-container w3-teal">
+                 <form action="aboutus.html" style="display:inline">
+                        <button class="w3-btn w3-teal" style="width:10%">About Us</button>
+                </form>
+                 
+                 <form action="contact.html" style="display:inline">
+                        <button class="w3-btn w3-teal" style="width:10%">Contact Us</button>
+                </form>
+                 
+                 <form action="policy.html" style="display:inline">
+                        <button class="w3-btn w3-teal" style="width:15%">Privacy Policy</button>
+                </form>
+                 <form action="#" style="display:inline">
+                     <button class="w3-btn w3-teal" style="width:10%">&Uparrow;Top</button>
+                </form>
+                 <br>
+                 <h4>&copy;Sdbce &nbsp; All Rights Reserved</h4>
+             </div> 
+        </footer>
+    </center>
+</html>

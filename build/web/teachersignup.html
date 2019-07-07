@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+   
+<title>Teacher's Registration</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="icon" href="images/sdbce.ico">
+<body>
+
+    <header class="w3-container w3-teal">
+      
+        <h1 style="text-align:center"><strong>Sushila Devi Bansal College Of Engineering</strong></h1>
+    </header><br><br><br>
+<center>
+    <div class="w3-container  w3-margin-top">
+
+        <form class=" w3-container w3-card-12" style="width:50%" action="registerteacherservlet" method="post">
+            <h2 class="w3-container w3-animate-top w3-xxlarge" style="color:teal"><strong>Please Signup</strong></h2>
+                <div class="w3-group">      
+                    <input class="w3-input" type="email" name="userid" style="width:50%" placeholder="username">
+                  
+                </div>
+                <div class="w3-group">      
+                    <input class="w3-input" type="text" name="name" required style="width:50%" placeholder="Name">
+                  
+                </div>
+                
+                <div class="w3-group">      
+                    <input class="w3-input" type="password" name="password" required style="width:50%" placeholder="password">
+                </div>
+               
+             <div class="w3-group">
+                <select class="w3-select" name="branch" style="width: 50%">
+                  <option value="CS">CS</option>
+                  <option value="IT">IT</option>
+                  <option value="ME">ME</option>
+                  <option value="CE">CE</option>
+                  <option value="EC">EC</option>
+                </select><br>
+                <label class="w3-label">Department</label>
+              </div>
+                
+                <div class="w3-group">      
+                    <input class="w3-input" type="text" name="designation" required style="width:50%" placeholder="designation">
+                </div>
+            <button class="w3-btn w3-teal w3-round-jumbo" style="20%">Register</button>
+                <br><br>
+        </form>
+        
+         
+    </div>
+</center>
+</body>
+    <center>
+        <br><br><br>
+        <div class="w3-container w3-teal">
+                 <footer>
+                        <form action="aboutus.html" style="display:inline">
+                               <button class="w3-btn w3-teal w3-round-jumbo" style="width:10%">About Us</button>
+                       </form>
+
+                        <form action="contact.html" style="display:inline">
+                               <button class="w3-btn w3-teal w3-round-jumbo" style="width:10%">Contact Us</button>
+                       </form>
+                       <form action="policy.html" style="display:inline">
+                               <button class="w3-btn w3-teal w3-round-jumbo" style="width:15%">Privacy Policy</button>
+                       </form>
+                        <form action="#" style="display:inline">
+                            <button class="w3-btn w3-teal w3-round-jumbo" style="width:10">&Uparrow;Top</button>
+                       </form>
+
+                            <br>
+                </footer>
+                 <h4>&copy;Sdbce</h4><h6 style="display:inline">&nbsp;All Rights Reserved</h6>
+             </div> 
+    </center>
+
+</html>

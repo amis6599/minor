@@ -1,0 +1,95 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+   
+<title>Student's Registration</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="icon" href="images/sdbce.ico">
+<body>
+    
+    <header class="w3-container w3-teal">
+      
+        <h1 class="w3-animate-bottom" style="text-align:center"><strong>Sushila Devi Bansal College Of Engineering</strong></h1>
+    </header>
+<center>
+    <div class="w3-container  w3-margin-top">
+
+        <form class=" w3-container w3-card-12" style="width:50%" action="registerstudentservlet" method="post">
+            <h1 style="color: #006666;" class="w3-animate-top"><strong>Please Signup</strong></h2>
+          <div class="w3-group">      
+              <input class="w3-input" type="text" style="width:40%" name="name" required placeholder="name">
+            
+          </div>
+            
+          <div class="w3-group">      
+            <input class="w3-input" type="text" style="width:40%" name="userid" required placeholder="Enrollment-No">
+            
+          </div>
+          
+          <div class="w3-group">      
+              <input class="w3-input" type="password" required name="password" style="width:40%" placeholder="password">
+            
+          </div>
+          
+      <div class="w3-group">
+          <select class="w3-select" name="branch" style="width: 40%">
+            <option value="CS">CS</option>
+            <option value="IT">IT</option>
+            <option value="ME">ME</option>
+            <option value="CE">CE</option>
+            <option value="EC">EC</option>
+          </select><br>
+          <label class="w3-label">Branch</label>
+      </div>
+      
+            <div class="w3-group">
+              <select class="w3-select" style="width: 40%" name="sem">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select><br>
+             <label class="w3-label">Semester</label>
+          </div>
+         
+          <button class="w3-btn w3-teal w3-section">Register</button>
+        </form>
+        
+         
+    </div>
+</center>
+</body>
+    <center>
+        <br><br>
+        <div class="w3-container w3-teal">
+                 <footer>
+                        <form action="aboutus.html" style="display:inline">
+                               <button class="w3-btn w3-teal w3-ripple" style="width:10%">About Us</button>
+                       </form>
+
+                        <form action="contact.html" style="display:inline">
+                               <button class="w3-btn w3-teal w3-ripple" style="width:10%">Contact Us</button>
+                       </form>
+                       <form action="policy.html" style="display:inline">
+                               <button class="w3-btn w3-teal w3-ripple" style="width:15%">Privacy Policy</button>
+                       </form>
+                        <form action="#" style="display:inline">
+                            <button class="w3-btn w3-teal w3-ripple" style="width:10">&Uparrow;Top</button>
+                       </form>
+
+                            <br>
+                </footer>
+                 <h4>&copy;Sdbce</h4><h6 style="display:inline">&nbsp;All Rights Reserved</h6>
+             </div> 
+    </center>
+
+</html>

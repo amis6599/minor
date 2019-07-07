@@ -1,0 +1,103 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+   
+<title>Login</title>
+<script type="text/javascript">  
+function validateform(){  
+var name=document.name.userid.value;  
+var password=document.name.password.value;  
+  
+if (userid==null || userid==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  } 
+  else
+      return true;
+}  
+</script>  
+        
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="icon" href="images/sdbce.ico">
+<body>  
+
+    <header class="w3-container w3-teal">
+      
+        <h1 style="text-align:center" class="w3-animate-top"><strong>Sushila Devi Bansal College Of Engineering</strong></h1>
+    </header>
+<center>
+    <div class="w3-container  w3-margin-top">
+            <br><br>
+            <form class="w3-container w3-card-12" style="width:40%" action="loginservlet" name="name" method="post" onsubmit="return validateform()">
+            <h2 class="w3-container w3-animate-top w3-xxlarge" style="color:teal"><strong>Please Login</strong></h2>
+                <div class="w3-group">      
+                    <input class="w3-input" type="text" required style="width:50%" placeholder="username" name="userid">
+                  
+                </div>
+                <div class="w3-group">      
+                    <input class="w3-input" type="password" required style="width:50%" name="password" placeholder="password">
+                  
+                </div>
+                
+          <center>  
+              <div class="w3-container w3-quarter">
+                    <label class="w3-checkbox">
+                        <input type="radio" name="usertype" value="teacher" id="teacher" checked="true">
+                      <div class="w3-checkmark"></div><h5 style="color:teal">Teacher</h5>
+                    </label>
+             </div>
+            
+             <div class="w3-container w3-quarter">
+                    <label class="w3-checkbox">
+                        <input type="radio" name="usertype" value="student" id="student" style="display:inline-block">
+                      <div class="w3-checkmark"></div><h5 style="color:teal">Student</h5>
+                    </label>
+             </div>
+          </center>
+           
+             <label class="w3-checkbox">
+                  <input type="checkbox" checked="checked">
+                  <div class="w3-checkmark"></div><h5 style="color:teal">Stay Logged In</h5>
+                </label>
+
+                <br><br>
+                <button class="w3-btn w3-teal"> Log in </button>
+                <br><br>
+        </form>
+        
+         <br><br>
+    </div>
+</center>
+</body>
+    <center>
+        <br><br>
+        <div class="w3-container w3-teal">
+                 <footer>
+                        <form action="aboutus.html" style="display:inline">
+                               <button class="w3-btn w3-teal" style="width:10%">About Us</button>
+                       </form>
+
+                        <form action="contact.html" style="display:inline">
+                               <button class="w3-btn w3-teal" style="width:10%">Contact Us</button>
+                       </form>
+                       <form action="policy.html" style="display:inline">
+                               <button class="w3-btn w3-teal" style="width:15%">Privacy Policy</button>
+                       </form>
+                        <form action="#" style="display:inline">
+                            <button class="w3-btn w3-teal" style="width:10">&Uparrow;Top</button>
+                       </form>
+
+                            <br>
+                </footer>
+                 <h4>&copy;Sdbce</h4><h6 style="display:inline">&nbsp;All Rights Reserved</h6>
+             </div> 
+    </center>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Upload Notice</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="w3.css">
+        <link rel="icon" href="images/sdbce.ico">    
+    </head>
+    <body>
+          <header class="w3-container w3-teal">
+            <h1 class="w3-animate-bottom" style="text-align:center"><strong>Sushila Devi Bansal College Of Engineering</strong></h1>
+          </header>
+          
+          <div class="w3-container ">
+           <center> 
+               <div class="w3-section" style="width:100%">
+                    <form action="loginindexteacher.jsp" style="display:inline">
+                            <button class="w3-btn w3-teal" style="width:10%">Home</button>
+                    </form>                
+
+                    <form action="trends.html" style="display:inline">   
+                            <button class="w3-btn w3-teal" style="width:10%">Trends</button>
+                     </form>
+
+                    <form action="news.html" style="display:inline">  
+                            <button class="w3-btn w3-teal" style="width:10%">News</button>
+                    </form>
+                </div>
+            </center>
+          </div>
+        
+        
+        <center>
+            <form class="w3-padding w3-card-4" action="AssignmentUploadServlet" style="width:50%" method="post" enctype="multipart/form-data">
+                    <h1 style="color: #006666" class="w3-animate-top"><strong>Upload Assignment</strong></h1>
+                  
+          
+              <div class="w3-group">
+                  <select class="w3-select w3-animate-top" style="width:40%" name="branch" >
+                      <option value="CS">CS</option>
+                      <option value="IT">IT</option>
+                      <option value="ME">ME</option>
+                      <option value="CE">CE</option>
+                      <option value="EC">EC</option>
+                    </select><br>
+                    <label class="w3-label w3-animate-top">Branch</label>
+               </div>
+               <div class="w3-group">
+                    <select class="w3-select w3-animate-top" style="width: 40%" name="sem">
+                        
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+
+                    </select><br>
+                 <label class="w3-label w3-animate-top">Semester</label>
+                </div>
+          
+                  <div class="w3-group">
+                    <select class="w3-select w3-animate-top" style="width: 40% ;height: 30%" name="subject">
+                        <option  value="101" >101</option>
+                        <option  value="102" >102</option>
+                        <option  value="103" >103</option>
+                        <option  value="104" >104</option>
+                        <option  value="105" >105</option>
+                        
+                        <option  value="201" >201</option>
+                        <option  value="202" >202</option>
+                        <option  value="203" >203</option>
+                        <option  value="204" >204</option>
+                        <option  value="205" >205</option>
+                        
+                        <option  value="301" >301</option>
+                        <option  value="302" >302</option>
+                        <option  value="303" >303</option>
+                        <option  value="304" >304</option>
+                        <option  value="305" >305</option>
+                        
+                         <option  value="401" >401</option>
+                        <option  value="402" >402</option>
+                        <option  value="403" >403</option>
+                        <option  value="404" >404</option>
+                        <option  value="405" >405</option>
+                        
+                         <option  value="501" >501</option>
+                        <option  value="502" >502</option>
+                        <option  value="503" >503</option>
+                        <option  value="504" >504</option>
+                        <option  value="505" >505</option>
+                        
+                         <option  value="601" >601</option>
+                        <option  value="602" >602</option>
+                        <option  value="603" >603</option>
+                        <option  value="604" >604</option>
+                        <option  value="605" >605</option>
+                        
+                         <option  value="701">701</option>
+                        <option  value="702" >702</option>
+                        <option  value="703" >703</option>
+                        <option  value="704" >704</option>
+                        <option  value="705" >705</option>
+                        
+                        <option  value="801">801</option>
+                        <option  value="802" >802</option>
+                        <option  value="803" >803</option>
+                        <option  value="804" >804</option>
+                        <option  value="805" >805</option>
+                    </select><br>
+                 <label class="w3-label w3-animate-top">Subject</label>
+               </div>
+                    
+                    <div class="w3-group">
+                    <select class="w3-select w3-animate-top" style="width: 40%" name="assignmentno">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select><br>
+                    <label class="w3-label w3-animate-top">Assignment No.</label>
+                    </div>
+                      
+                    <div class="w3-group">      
+                        <input type="file" name="file"><br>
+                        <label class="w3-label">Select File To Upload</label>
+                    </div>
+                    
+                    <div class="w3-group w3-animate-top">      
+                        <input type="date" style="border:1px;border-bottom-style:solid;border-bottom-color:#808080;width:40%;color:#808080;" name="issuedate"><br>
+                        <label class="w3-label">Issue Date</label>
+                    </div>
+                 
+                  <div class="w3-group w3-animate-top">      
+                      <input type="date" style="border:1px;border-bottom-style:solid;border-bottom-color:#808080;width:40%;color:#808080;" name="returndate"><br>
+                    <label class="w3-label">Return Date</label>
+                </div>
+          
+                <button class="w3-btn w3-teal">Upload Assignment</button>
+            </form>
+     <script>
+        function submit()
+        {
+            if(document.subject_validation.sem.selectedIndex==1)
+                {
+                    document.subject_validation.subject.options.add( new Option('101','101') );
+                    document.subject_validation.subject.options.add( new Option('102','102') );
+                    document.subject_validation.subject.options.add( new Option('103','103') );
+                    
+                }
+                else if(document.subject_validation.sem.selectedIndex==2)
+                {
+                    document.subject_validation.subject.options.add( new Option('201','201') );
+                    document.subject_validation.subject.options.add( new Option('202','202') );
+                    document.subject_validation.subject.options.add( new Option('203','203') );
+                    
+                }
+         }
+    </script>
+        </center>
+    </body>
+     
+<!--    footer goes here-->
+   
+        <footer>
+             <center>
+            <br><br>
+             <div class="w3-container w3-teal">
+                 <form action="aboutus.html" style="display:inline">
+                        <button class="w3-btn w3-teal" style="width:10%">About Us</button>
+                </form>
+                 
+                 <form action="contact.html" style="display:inline">
+                        <button class="w3-btn w3-teal" style="width:10%">Contact Us</button>
+                </form>
+                 
+                 <form action="policy.html" style="display:inline">
+                        <button class="w3-btn w3-teal" style="width:15%">Privacy Policy</button>
+                </form>
+                 <form action="#" style="display:inline">
+                     <button class="w3-btn w3-teal" style="width:10%">&Uparrow;Top</button>
+                </form>
+                 <br>
+                 <h4>&copy;Sdbce &nbsp; All Rights Reserved</h4>
+             </div>
+            </center>
+        </footer>
+    
+  
+</html>
+
+
+
+<!--<html>
+<form name="combobox_validation">
+Select state <select name="selectstate" onChange="return comboBoxValidation()">
+<option value="select a state" selected="true">select a state</option>
+<option value="tamil nadu">Tamil Nadu</option>
+<option value="andhra pradesh">Andhra Pradesh</option>
+<option value="kerala">Kerala</option>
+<option value="karnataka">Karnataka</option>
+</select>
+Select city <select name="city">
+<option value="select a city" selected="true">select a city</option>
+
+</select>
+</form>
+
+<script>
+function comboBoxValidation()
+{
+if(document.combobox_validation.selectstate.selectedIndex==1)
+{
+document.combobox_validation.city.options.add( new Option('chennai','chennai') );
+
+document.combobox_validation.city.options.add( new Option('indore','indore') );
+
+}
+else if(document.combobox_validation.selectstate.selectedIndex==2)
+{
+document.combobox_validation.city.options.add( new Option('hyderabad','hyderabad') );
+
+document.combobox_validation.city.options.add( new Option('telangana','telangana') );
+
+}
+}
+</script>
+</html>-->
